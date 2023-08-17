@@ -20,7 +20,7 @@
       <img alt="" class="img-fluid mx-auto" style="max-width:400px;" src="Image/pencil.png"/>
         <h1 class="text-primary text-uppercase text-center mt-3">Start Taking notes Here!</h1>
         <div class="container text-center">
-            <button class="btn btn-outline-primary text-center">Start here</button>
+            <button id="redirectButton" class="btn btn-outline-primary text-center">Start here</button>
         </div>
     </div>
 
@@ -30,6 +30,14 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>
+    var button = document.getElementById("redirectButton");
+
+    button.addEventListener("click", function() {
+        // Redirect to the JSP page
+        window.location.href = "Addnote.jsp";
+    });
+</script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 
